@@ -186,26 +186,21 @@ if __name__ == '__main__':
 
 # In[ ]:
 
-genome_fasta = args.genome
-## read in vcf file and store it as vcf
-VF = VariantFileObject(args.inFileName)
-VF.readvcf()
+    genome_fasta = args.genome
+    ## read in vcf file and store it as vcf
+    VF = VariantFileObject(args.inFileName)
+    VF.readvcf()
 
-## drop indels
-VF.drop_indels()
+    ## drop indels
+    VF.drop_indels()
 
-## convert to bed and add nucleotide
-VF.bedformat()
+    ## convert to bed and add nucleotide
+    VF.bedformat()
 
-## Use bedtools
-Bedtools = pybedtools.BedTool(VF.bedtofile())
-Bedtools = Bedtools.sequence(genome_fasta, name=True)
-VF.to_mutect(Bedtools)
-parse_mutational_context(VF.out_file, args.outFileName)
-
-
-
-
+    ## Use bedtools
+    Bedtools = pybedtools.BedTool(VF.bedtofile())
+    Bedtools = Bedtools.sequence(genome_fasta, name=True)
+    VF.to_mutect(Bedtools)
 
 
 
