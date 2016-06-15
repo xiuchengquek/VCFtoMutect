@@ -27,7 +27,6 @@ In []:
     from collections import defaultdict
 
     # Or whatever you call hong's script
-    from Mutect_context import *
     import pandas as pd
     import itertools
     import argparse
@@ -196,7 +195,6 @@ In []:
         Bedtools = pybedtools.BedTool(VF.bedtofile())
         Bedtools = Bedtools.sequence(genome_fasta, name=True)
         VF.to_mutect(Bedtools)
-        parse_mutation_context(VC.out_file, args.outFileName)
 
 
 

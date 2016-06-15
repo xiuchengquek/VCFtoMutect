@@ -30,7 +30,6 @@ import os
 from collections import defaultdict
 
 # Or whatever you call hong's script
-from Mutect_context import *
 import pandas as pd
 import itertools
 import argparse
