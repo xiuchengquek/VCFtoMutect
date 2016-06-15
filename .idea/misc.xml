@@ -36,19 +36,4 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.10 virtualenv at ~/Projects/env" project-jdk-type="Python SDK" />
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings is-module-sdk="true">
-        <envs>
-          <env key="PATH" value="$PATH:~/Projects/dnanexusAppl/bin/dx-toolkit/bin/" />
-        </envs>
-        <option name="myUseModuleSdk" value="true" />
-        <option name="myEnvs">
-          <map>
-            <entry key="PATH" value="$PATH:~/Projects/dnanexusAppl/bin/dx-toolkit/bin/" />
-          </map>
-        </option>
-      </console-settings>
-    </option>
-  </component>
 </project>

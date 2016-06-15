@@ -54,7 +54,7 @@ class TestVariantObjectt(unittest.TestCase):
 
     def test_to_bed_format_default(self):
         v = Variant(1,10,1,'CT','C')
-        self.assertEqual(v.toBedFormat(), '1\t10\t10\t1')
+        self.assertEqual(v.toBedFormat(), '1\t10\t10\t1;CT;C')
 
 
 class TestVariantFileObject(unittest.TestCase):
@@ -116,8 +116,8 @@ class TestVariantFileObject(unittest.TestCase):
                 fh.assert_has_calls(calls_list, any_order=True)
                 handle = fh()
                 calls_list = [
-                    calls("1\t10\t10\t1\n",),
-                    calls("2\t10\t10\t2\n",)
+                    calls("1\t10\t10\t1;A;C\n",),
+                    calls("2\t10\t10\t2;A;C\n",)
                 ]
                 handle.write.assert_has_calls(calls_list)
 
@@ -129,8 +129,8 @@ class TestVariantFileObject(unittest.TestCase):
                 fh.assert_has_calls(calls_list, any_order=True)
                 handle = fh()
                 calls_list = [
-                    calls("1\t7\t13\t1\n",),
-                    calls("2\t7\t13\t2\n",)
+                    calls("1\t7\t13\t1;A;C\n",),
+                    calls("2\t7\t13\t2;A;C\n",)
                 ]
                 handle.write.assert_has_calls(calls_list)
 
