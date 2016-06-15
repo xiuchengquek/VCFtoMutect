@@ -71,7 +71,7 @@ def to_mutect(bedtoolsObj, outfile):
             header = header.strip()
             sequence = sequence.strip()
             sequence = sequence.upper()
-            sequence = sequence[:3] + "x" + sequence[3:]
+            sequence = sequence[:3] + "x" + sequence[4:]
             header = header.split(';')
             header.append(sequence)
             header.append('KEEP')
@@ -106,7 +106,7 @@ if __name__ == '__main__':
     VF = VariantFileObject(Variant)
     VF.load_variant_file(args.inFileName)
     VF.drop_indels()
-    bedfile = VF.write_bed_file(args.bedfile, -3, 3)
+    bedfile = VF.write_bed_file(args.bedfile, -4, 3)
     genome_fasta = args.genome
     Bedtools = pybedtools.BedTool(bedfile)
     Bedtools = Bedtools.sequence(genome_fasta, name=True)
