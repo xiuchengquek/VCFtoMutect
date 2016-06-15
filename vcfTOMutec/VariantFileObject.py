@@ -62,7 +62,7 @@ class VariantFileObject:
         return bedfile
 
 def to_mutect(bedtoolsObj, outfile):
-    columns = ["snp_id","ref_allele","alt_allele","context"]
+    columns = ["snp_id","ref_allele","alt_allele","context","judgement"]
     fh_out = open(outfile, 'w+')
     fh_out.write("%s\n" % "\t".join(columns))
 
