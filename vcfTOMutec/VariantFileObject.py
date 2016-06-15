@@ -23,7 +23,9 @@ class Variant:
 
         start = self.pos + add_start
         end = self.pos + add_end
-        return "%s\t%s\t%s\t%s" % (self.chr, start, int(end), self.id)
+
+        name =   str(self.id) + ';' + self.ref + ';' + self.alt
+        return "%s\t%s\t%s\t%s" % (self.chr, start, int(end), name)
 
 
     def __str__(self):
