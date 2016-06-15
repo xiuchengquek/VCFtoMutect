@@ -70,6 +70,7 @@ def to_mutect(bedtoolsObj, outfile):
         for header, sequence in itertools.izip_longest(*[f]*2):
             header = header.strip()
             sequence = sequence.strip()
+            sequence = sequence.upper()
             sequence = sequence[:3] + "x" + sequence[3:]
             header = header.split(';')
             header.append(sequence)
