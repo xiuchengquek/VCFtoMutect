@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16f96d07-393a-4ca6-94fc-ae24db39902d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vcfTOMutec/VariantFileObject.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vcfTOMutec/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vcfTOMutec/requirements.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vcfTOMutec/test_variantFileObject.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VCFtoMutect.iml" afterPath="$PROJECT_DIR$/.idea/VCFtoMutect.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VCFtoMutec.ipynb" afterPath="$PROJECT_DIR$/VCFtoMutec.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VCFtoMutec.py" afterPath="$PROJECT_DIR$/VCFtoMutec.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vcfTOMutec/VariantFileObject.py" afterPath="$PROJECT_DIR$/vcfTOMutec/VariantFileObject.py" />
     </list>
     <ignored path="VCFtoMutect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,9 +74,11 @@
           <file leaf-file-name="VariantFileObject.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/vcfTOMutec/VariantFileObject.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.027777778">
-                  <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-                  <folding />
+                <state vertical-scroll-proportion="0.8194444">
+                  <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#1#16#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -580,9 +570,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vcfTOMutec/VariantFileObject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027777778">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="0.8194444">
+          <caret line="110" column="40" selection-start-line="110" selection-start-column="40" selection-end-line="110" selection-end-column="40" />
+          <folding>
+            <element signature="e#1#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

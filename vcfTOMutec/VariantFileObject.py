@@ -108,6 +108,7 @@ if __name__ == '__main__':
     genome_fasta = args.genome
     Bedtools = pybedtools.BedTool(bedfile)
     Bedtools = Bedtools.sequence(genome_fasta, name=True)
+    to_mutect(Bedtools, args.outFileName)
 
 
 
