@@ -116,7 +116,6 @@ class TestVariantFileObject(unittest.TestCase):
                 fh.assert_has_calls(calls_list, any_order=True)
                 handle = fh()
                 calls_list = [
-                    calls("chr\tstart\tend\tid\n"),
                     calls("1\t10\t10\t1\n",),
                     calls("2\t10\t10\t2\n",)
                 ]
@@ -130,7 +129,6 @@ class TestVariantFileObject(unittest.TestCase):
                 fh.assert_has_calls(calls_list, any_order=True)
                 handle = fh()
                 calls_list = [
-                    calls("chr\tstart\tend\tid\n"),
                     calls("1\t7\t13\t1\n",),
                     calls("2\t7\t13\t2\n",)
                 ]

@@ -55,7 +55,6 @@ class VariantFileObject:
 
     def write_bed_file(self, bedfile, add_start=0, add_end=0):
         with open(bedfile, 'w') as f:
-            f.write('chr\tstart\tend\tid\n')
             for v in self._variant:
                 f.write("%s\n" % v.toBedFormat(add_start,add_end))
         return bedfile
